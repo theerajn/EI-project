@@ -42,11 +42,11 @@ Before you begin, ensure you have the following installed:
 ### **Clone the Repository**
 
 ```bash
-git clone https://github.com/your-repo/virtual-classroom-management.git
+git clone https://github.com/theerajn/ei-project.git
 Navigate to Project Directory
 bash
 Copy code
-cd virtual-classroom-management
+cd project_ei
 Compile the Java Files
 Ensure that you have the JDK installed. Compile the Java source files using:
 
@@ -102,129 +102,15 @@ Classroom.java: Represents a classroom, managing assignments and notifying obser
 Student.java: Manages student details and assignment submissions.
 LoggerManager.java: Provides custom logging for auditing actions and events.
 ClassroomFactory.java: Factory class for creating classroom instances.
-Design Patterns Implementation
-This project demonstrates the implementation of various design patterns in Java. Below are the use cases and details for each pattern implemented in this repository.
 
-📜 1. Prototype Pattern - Document Editor
-Use Case
-A document editor is implemented where users can create new documents by cloning a pre-defined template. This pattern allows us to copy existing documents, preserving their formatting and content, to create new ones.
-
-Files
-Document.java - Defines the document structure.
-DocumentTemplate.java - Provides predefined document templates.
-Editor.java - Manages user interactions to create and edit documents.
-Main.java - Entry point of the application.
-Key Classes
-Document: Base class representing a document.
-DocumentTemplate: Provides default content for new documents.
-Editor: Handles document creation and editing.
-🗂️ 2. Composite Pattern - File System
-Use Case
-A file system is implemented where files and directories are represented as components. Operations like reading, writing, or deleting can be performed on both individual files and entire directories.
-
-Files
-Component.java - Abstract component class for files and directories.
-File.java - Represents a file.
-Directory.java - Represents a directory containing other components.
-FileSystem.java - Manages user interactions with the file system.
-Main.java - Entry point of the application.
-Key Classes
-Component: Abstract class for file system components.
-File: Represents a file with read and write operations.
-Directory: Represents a directory containing other files or directories.
-FileSystem: Handles user interactions for file operations.
-💳 3. Factory Pattern - Payment Gateway System
-Use Case
-A payment gateway system is implemented where different factories handle different payment methods (e.g., credit cards, cryptocurrencies, bank transfers). The factory pattern is used to create different payment methods.
-
-Files
-PaymentMethod.java - Interface for payment methods.
-PaymentFactory.java - Abstract factory for creating payment methods.
-CreditCardFactory.java - Factory for creating credit card payments.
-CreditCardPayment.java - Represents credit card payment.
-CryptocurrencyFactory.java - Factory for creating cryptocurrency payments.
-CryptocurrencyPayment.java - Represents cryptocurrency payment.
-BankTransferFactory.java - Factory for creating bank transfer payments.
-BankTransferPayment.java - Represents bank transfer payment.
-PaymentProcessor.java - Manages user interactions for processing payments.
-Main.java - Entry point of the application.
-Key Classes
-PaymentMethod: Interface for payment methods.
-PaymentFactory: Abstract class for factories creating payment methods.
-PaymentProcessor: Handles user interactions for payment processing.
-🔐 4. Proxy Pattern - Security Proxy
-Use Case
-A security proxy is implemented to handle authentication and authorization checks before allowing access to sensitive data. This pattern provides a way to control access to an object by using a proxy.
-
-Files
-Data.java - Interface for sensitive data.
-RealData.java - Actual implementation of sensitive data.
-DataProxy.java - Proxy that controls access to the RealData object.
-Main.java - Entry point of the application.
-Key Classes
-Data: Interface for sensitive data operations.
-RealData: Represents the actual sensitive data.
-DataProxy: Proxy that performs access control.
-📁 5. Composite Pattern - Enhanced File System
-Use Case
-An enhanced file system where files and directories are managed as components with additional functionality for operations such as reading, writing, and deleting, adhering to the Composite design pattern.
-
-Files
-Component.java - Abstract component class defining common methods for files and directories.
-File.java - Represents a file with specific read and write operations.
-Directory.java - Represents a directory that can contain files and other directories.
-FileSystem.java - Manages the file system interactions and operations.
-Main.java - Entry point of the application.
-Key Classes
-Component: Abstract class for both files and directories.
-File: Handles file-specific operations.
-Directory: Manages a collection of components (files or directories).
-FileSystem: Provides the user interface for interacting with the file system.
-🌟 6. State Pattern - Document Workflow
-Use Case
-A document workflow system is implemented where documents go through various states (e.g., Draft, Review, Approved, Archived). The state pattern is used to manage transitions between these states.
-
-Files
-Document.java - Manages the current state of the document.
-DocumentState.java - Abstract class for different document states.
-DraftState.java - State for draft documents.
-ReviewState.java - State for documents under review.
-ApprovedState.java - State for approved documents.
-ArchivedState.java - State for archived documents.
-Main.java - Entry point of the application.
-Key Classes
-DocumentState: Abstract class for document states.
-DraftState, ReviewState, ApprovedState, ArchivedState: Concrete states managing specific document behaviors.
-🔄 Cloning Exercise
-To clone and work with the exercise1 project:
-
-Clone the Repository
-bash
-Copy code
-git clone https://github.com/your-repo/exercise1.git
-Navigate to Project Directory
-bash
-Copy code
-cd exercise1
-Compile the Java Files
-Ensure that you have the JDK installed. Compile the Java source files using:
-
-bash
-Copy code
-javac -d bin src/*.java
-Run the Application
-Execute the application using:
-
-bash
-Copy code
-java -cp bin Main
 🤝 Contributing
 We welcome contributions to improve and extend the functionality of this application. Please fork the repository and submit a pull request with detailed information about your changes.
 
 📜 License
 This project is licensed under the MIT License. For more details, see the LICENSE file.
 
-css
-Copy code
+📧 Contact Information
+For any inquiries or feedback, please reach out:
 
-Feel free to adjust the URLs and paths according to your specific repository setup!
+Email: theerajnjegan@gmail.com
+GitHub: theerajn
