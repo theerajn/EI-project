@@ -1,104 +1,108 @@
-Virtual Classroom Management Application
-Overview
-The Virtual Classroom Management Application is a comprehensive solution for managing virtual classrooms, student enrollment, and assignment tracking. This Java-based application provides functionality for creating and managing classrooms, enrolling students, and handling assignments with a focus on scalability and maintainability.
+📚 Virtual Classroom Management Application
+Welcome to the Virtual Classroom Management Application! This powerful Java-based solution offers a complete set of tools for managing virtual classrooms, including student enrollment, assignment scheduling, and more. Designed with robust features and a user-friendly interface, this application is ideal for educators and administrators seeking efficient classroom management.
 
-Key Features
-Classroom Management
+🎯 Key Features
+Classroom Management:
 
-Add and remove classrooms.
-View a list of all classrooms.
-Student Management
+Add and remove classrooms effortlessly.
+View and manage all existing classrooms.
+Student Management:
 
-Add students to classrooms.
-List students within a specific classroom.
-Assignment Management
+Enroll students into classrooms.
+List all students in a specific classroom.
+Assignment Management:
 
-Schedule and remove assignments for classrooms.
-Submit assignments by students, ensuring proper validation.
-Installation
-To set up and run the Virtual Classroom Management application, follow these steps:
+Schedule and remove assignments with ease.
+Submit assignments and ensure compliance with deadlines.
+Conflict Detection:
 
+Detect and handle conflicts between scheduled assignments.
+Logging and Monitoring:
+
+Custom logging for all actions and events.
+Monitor and notify changes related to assignments and classrooms.
+🛠️ Technologies Used
+Programming Language: Java
+Design Patterns: Singleton Pattern, Factory Pattern, Observer Pattern
+Logging: Custom Logger
+Version Control: Git
+📋 Prerequisites
+Before you begin, ensure you have the following installed:
+
+Java Development Kit (JDK)
+Git
+🚀 Installation
 Clone the Repository
-
 bash
 Copy code
 git clone https://github.com/your-repo/virtual-classroom-management.git
-Navigate to the Project Directory
-
+Navigate to Project Directory
 bash
 Copy code
 cd virtual-classroom-management
 Compile the Java Files
-
 Ensure that you have the JDK installed. Compile the Java source files using:
 
 bash
 Copy code
 javac -d bin src/*.java
 Run the Application
-
 Execute the application using:
 
 bash
 Copy code
 java -cp bin src.Main
-Usage Instructions
-After launching the application, you will be presented with a menu. Here’s how to use each option:
+📚 Usage Instructions
+Once the application is running, follow the console prompts to manage your virtual classroom:
 
-Add a Classroom
+Add a Classroom:
 
-Select option 1.
-Enter the desired classroom name.
-Remove a Classroom
+Input the desired classroom name.
+Remove a Classroom:
 
-Select option 2.
 Provide the classroom name to be removed.
-List Classrooms
+List Classrooms:
 
-Select option 3 to display all existing classrooms.
-Add a Student
+Display all existing classrooms.
+Add a Student:
 
-Select option 4.
-Input the student ID and the classroom name.
-List Students in a Classroom
+Enter the student ID and the classroom name.
+List Students in a Classroom:
 
-Select option 5.
-Enter the classroom name to view its students.
-Schedule an Assignment
+View all students within a specified classroom.
+Schedule an Assignment:
 
-Select option 6.
-Provide the classroom name and assignment details.
-Remove an Assignment
+Input the classroom name and assignment details.
+Remove an Assignment:
 
-Select option 7.
-Enter the classroom name and assignment details.
-Submit an Assignment
+Enter the classroom name and the assignment details to be removed.
+Submit an Assignment:
 
-Select option 8.
-Input the student ID, classroom name, and assignment details.
-Exit the Application
+Provide the student ID, classroom name, and assignment details.
+Exit the Application:
 
-Choose option 9 to exit.
-Code Structure
-Main.java: The main entry point of the application, handling user input and menu display.
-VirtualClassroomManager.java: Central management for classrooms, students, and assignments. Implements core functionalities and business logic.
-Classroom.java: Represents a classroom, manages assignments, and maintains assignment statuses.
-Student.java: Represents a student, manages assignment submissions and tracks submitted assignments.
-LoggerManager.java: Handles logging of application events and errors.
-Design Patterns
-The application employs several design patterns for effective solution design:
+Choose this option to exit.
+🛡️ Design Patterns
+This application employs several design patterns to ensure efficiency and maintainability:
 
-Singleton Pattern: Implemented in VirtualClassroomManager to ensure a single instance throughout the application.
-Factory Pattern: Utilized in ClassroomFactory for creating classroom instances.
-Observer Pattern: Applied via AssignmentSubject to notify about assignment changes.
-Contributing
-Contributions to enhance the functionality or address issues are welcome. Please fork the repository and submit a pull request with a detailed description of changes.
+Singleton Pattern: Ensures a single instance of the VirtualClassroomManager for consistent management.
+Factory Pattern: Simplifies the creation of Classroom instances.
+Observer Pattern: Monitors and notifies changes in assignment scheduling and status.
+📜 Code Structure
+Main.java: Entry point for the application, managing user input and interaction.
+VirtualClassroomManager.java: Central management for classrooms and students, handling core functionalities.
+Classroom.java: Represents a classroom, managing assignments and notifying observers.
+Student.java: Manages student details and assignment submissions.
+LoggerManager.java: Provides custom logging for auditing actions and events.
+ClassroomFactory.java: Factory class for creating classroom instances.
+🤝 Contributing
+We welcome contributions to improve and extend the functionality of this application. Please fork the repository and submit a pull request with detailed information about your changes.
 
-License
+📜 License
 This project is licensed under the MIT License. For more details, see the LICENSE file.
 
-Contact Information
-For inquiries or feedback, please reach out via:
+📧 Contact Information
+For any inquiries or feedback, please reach out:
 
 Email: theerajnjegan@gmail.com
 GitHub: theerajn
