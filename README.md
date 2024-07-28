@@ -128,139 +128,139 @@ We welcome contributions to improve and extend the functionality of this applica
 
 This project is licensed under the MIT License. For more details, see the LICENSE file.
 
- **🛠️ Design Patterns Showcase**
+# Design Patterns Implementation
 
-Welcome to the **Design Patterns Showcase**! This project demonstrates six different software design patterns, with use cases provided for behavioral, creational, and structural patterns. The implementation is available in Java, C#, or TypeScript. Explore the code to understand how these patterns can be applied to solve common software design problems.
+This project demonstrates the implementation of various design patterns in Java. Below are the use cases and details for each pattern implemented in this repository.
 
-## **🎯 Design Patterns Demonstrated**
+## 📜 **1. Prototype Pattern** - Document Editor
 
-### **1. Creational Patterns**
+### **Use Case**
+A document editor is implemented where users can create new documents by cloning a pre-defined template. This pattern allows us to copy existing documents, preserving their formatting and content, to create new ones.
 
-#### **Singleton Pattern**
+### **Files**
+- `Document.java` - Defines the document structure.
+- `DocumentTemplate.java` - Provides predefined document templates.
+- `Editor.java` - Manages user interactions to create and edit documents.
+- `Main.java` - Entry point of the application.
 
-**Use Case**: Ensures a single instance of a class is created and provides a global point of access to that instance. Useful for managing shared resources like configuration settings or a connection pool.
+### **Key Classes**
+- **`Document`**: Base class representing a document.
+- **`DocumentTemplate`**: Provides default content for new documents.
+- **`Editor`**: Handles document creation and editing.
 
-- **Example**: `ConfigurationManager.java` – Manages application configuration settings.
+---
 
-#### **Factory Pattern**
+## 🗂️ **2. Composite Pattern** - File System
 
-**Use Case**: Provides an interface for creating objects but allows subclasses to alter the type of objects that will be created. Useful for managing and decoupling the creation of complex objects.
+### **Use Case**
+A file system is implemented where files and directories are represented as components. Operations like reading, writing, or deleting can be performed on both individual files and entire directories.
 
-- **Example**: `ShapeFactory.java` – Creates different types of shapes based on user input.
+### **Files**
+- `Component.java` - Abstract component class for files and directories.
+- `File.java` - Represents a file.
+- `Directory.java` - Represents a directory containing other components.
+- `FileSystem.java` - Manages user interactions with the file system.
+- `Main.java` - Entry point of the application.
 
-### **2. Structural Patterns**
+### **Key Classes**
+- **`Component`**: Abstract class for file system components.
+- **`File`**: Represents a file with read and write operations.
+- **`Directory`**: Represents a directory containing other files or directories.
+- **`FileSystem`**: Handles user interactions for file operations.
 
-#### **Adapter Pattern**
+---
 
-**Use Case**: Allows incompatible interfaces to work together by converting the interface of a class into another interface that clients expect. Useful for integrating third-party libraries with existing code.
+## 💳 **3. Factory Pattern** - Payment Gateway System
 
-- **Example**: `MediaPlayerAdapter.java` – Adapts a new media player to work with an existing media interface.
+### **Use Case**
+A payment gateway system is implemented where different factories handle different payment methods (e.g., credit cards, cryptocurrencies, bank transfers). The factory pattern is used to create different payment methods.
 
-#### **Decorator Pattern**
+### **Files**
+- `PaymentMethod.java` - Interface for payment methods.
+- `PaymentFactory.java` - Abstract factory for creating payment methods.
+- `CreditCardFactory.java` - Factory for creating credit card payments.
+- `CreditCardPayment.java` - Represents credit card payment.
+- `CryptocurrencyFactory.java` - Factory for creating cryptocurrency payments.
+- `CryptocurrencyPayment.java` - Represents cryptocurrency payment.
+- `BankTransferFactory.java` - Factory for creating bank transfer payments.
+- `BankTransferPayment.java` - Represents bank transfer payment.
+- `PaymentProcessor.java` - Manages user interactions for processing payments.
+- `Main.java` - Entry point of the application.
 
-**Use Case**: Adds new functionalities to objects dynamically without altering their structure. Useful for extending the behavior of objects in a flexible and reusable way.
+### **Key Classes**
+- **`PaymentMethod`**: Interface for payment methods.
+- **`PaymentFactory`**: Abstract class for factories creating payment methods.
+- **`PaymentProcessor`**: Handles user interactions for payment processing.
 
-- **Example**: `CoffeeDecorator.java` – Adds different types of additives (like milk or sugar) to a basic coffee object.
+---
 
-### **3. Behavioral Patterns**
+## 🔐 **4. Proxy Pattern** - Security Proxy
 
-#### **Observer Pattern**
+### **Use Case**
+A security proxy is implemented to handle authentication and authorization checks before allowing access to sensitive data. This pattern provides a way to control access to an object by using a proxy.
 
-**Use Case**: Defines a dependency between objects so that when one object changes state, all its dependents are notified and updated automatically. Useful for implementing distributed event handling systems.
+### **Files**
+- `Data.java` - Interface for sensitive data.
+- `RealData.java` - Actual implementation of sensitive data.
+- `DataProxy.java` - Proxy that controls access to the `RealData` object.
+- `Main.java` - Entry point of the application.
 
-- **Example**: `WeatherStation.java` – Notifies observers (displays) about changes in weather data.
+### **Key Classes**
+- **`Data`**: Interface for sensitive data operations.
+- **`RealData`**: Represents the actual sensitive data.
+- **`DataProxy`**: Proxy that performs access control.
 
-#### **Strategy Pattern**
+---
 
-**Use Case**: Defines a family of algorithms, encapsulates each algorithm, and makes them interchangeable. Useful for allowing the algorithm to vary independently from the clients that use it.
+## 📁 **5. Composite Pattern** - Enhanced File System
 
-- **Example**: `PaymentStrategy.java` – Allows different payment methods (credit card, PayPal) to be used interchangeably during checkout.
+### **Use Case**
+An enhanced file system where files and directories are managed as components with additional functionality for operations such as reading, writing, and deleting, adhering to the Composite design pattern.
 
-## **🛠️ Technologies Used**
+### **Files**
+- `Component.java` - Abstract component class defining common methods for files and directories.
+- `File.java` - Represents a file with specific read and write operations.
+- `Directory.java` - Represents a directory that can contain files and other directories.
+- `FileSystem.java` - Manages the file system interactions and operations.
+- `Main.java` - Entry point of the application.
 
-- **Programming Languages**: Java, C#, TypeScript
-- **Design Patterns**: Singleton Pattern, Factory Pattern, Adapter Pattern, Decorator Pattern, Observer Pattern, Strategy Pattern
-- **Version Control**: Git
+### **Key Classes**
+- **`Component`**: Abstract class for both files and directories.
+- **`File`**: Handles file-specific operations.
+- **`Directory`**: Manages a collection of components (files or directories).
+- **`FileSystem`**: Provides the user interface for interacting with the file system.
 
-## **📋 Prerequisites**
+---
 
-Before you begin, ensure you have the following installed:
+## 🌟 **6. State Pattern** - Document Workflow
 
-- **Java Development Kit (JDK)** (for Java implementation)
-- **.NET SDK** (for C# implementation)
-- **Node.js** (for TypeScript implementation)
-- **Git**
+### **Use Case**
+A document workflow system is implemented where documents go through various states (e.g., Draft, Review, Approved, Archived). The state pattern is used to manage transitions between these states.
 
-## **🚀 Installation**
+### **Files**
+- `Document.java` - Manages the current state of the document.
+- `DocumentState.java` - Abstract class for different document states.
+- `DraftState.java` - State for draft documents.
+- `ReviewState.java` - State for documents under review.
+- `ApprovedState.java` - State for approved documents.
+- `ArchivedState.java` - State for archived documents.
+- `Main.java` - Entry point of the application.
 
-### **Clone the Repository**
+### **Key Classes**
+- **`DocumentState`**: Abstract class for document states.
+- **`DraftState`, `ReviewState`, `ApprovedState`, `ArchivedState`**: Concrete states managing specific document behaviors.
 
-```bash
-git clone https://github.com/your-repo/design-patterns-showcase.git
-Navigate to Project Directory
-bash
-Copy code
-cd design-patterns-showcase
-Compile and Run the Application
-For Java
-Compile the Java source files using:
+---
 
-bash
-Copy code
-javac -d bin src/**/*.java
-Run the application using:
+## Getting Started
 
-bash
-Copy code
-java -cp bin Main
-For C#
-Build the C# project using:
+1. Clone the repository.
+2. Compile the Java files using `javac`.
+3. Run the `Main.java` file for each pattern to see the implementation in action.
 
-bash
-Copy code
-dotnet build
-Run the application using:
+```sh
+javac -d bin src/Creational_factory/*.java
+java -cp bin Creational_factory.Main
 
-bash
-Copy code
-dotnet run
-For TypeScript
-Compile the TypeScript files using:
-
-bash
-Copy code
-tsc
-Run the application using:
-
-bash
-Copy code
-node dist/main.js
-📚 Usage Instructions
-Explore each design pattern implementation by following the provided example code in the corresponding language. Review the code to understand how each pattern is applied and how it can be used to solve specific design problems.
-
-🛡️ Design Patterns Overview
-Creational Patterns: Focus on object creation mechanisms, trying to create objects in a manner suitable to the situation.
-Structural Patterns: Deal with object composition, creating relationships between objects to form larger structures.
-Behavioral Patterns: Focus on communication between objects, defining how objects interact and communicate with each other.
-📜 Code Structure
-Main.java / Main.cs / main.ts: Entry point for the application, demonstrating various design patterns.
-SingletonPattern.java / SingletonPattern.cs / SingletonPattern.ts: Implementation of the Singleton pattern.
-FactoryPattern.java / FactoryPattern.cs / FactoryPattern.ts: Implementation of the Factory pattern.
-AdapterPattern.java / AdapterPattern.cs / AdapterPattern.ts: Implementation of the Adapter pattern.
-DecoratorPattern.java / DecoratorPattern.cs / DecoratorPattern.ts: Implementation of the Decorator pattern.
-ObserverPattern.java / ObserverPattern.cs / ObserverPattern.ts: Implementation of the Observer pattern.
-StrategyPattern.java / StrategyPattern.cs / StrategyPattern.ts: Implementation of the Strategy pattern.
-
-🤝 Contributing
-We welcome contributions to improve and extend the functionality of this showcase. Please fork the repository and submit a pull request with detailed information about your changes.
-
-📜 License
-This project is licensed under the MIT License. For more details, see the LICENSE file.
-
-📧 Contact Information
-For any inquiries or feedback, please reach out:
-
-Email: theerajnjegan@gmail.com
-GitHub: theerajn
 
 
