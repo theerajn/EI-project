@@ -45,13 +45,13 @@ Before you begin, ensure you have the following installed:
 ### **Clone the Repository**
 
 ```bash
-git clone https://github.com/your-repo/virtual-classroom-management.git
+git clone [https://github.com/your-repo/virtual-classroom-management.git](https://github.com/theerajn/ei-project.git)
 ```
 
 ### **Navigate to Project Directory**
 
 ```bash
-cd virtual-classroom-management
+cd project_ei
 ```
 
 ### **Compile the Java Files**
@@ -59,7 +59,8 @@ cd virtual-classroom-management
 Ensure that you have the JDK installed. Compile the Java source files using:
 
 ```bash
-javac -d bin src/*.java
+ javac -d bin src/exercise2/*.java
+
 ```
 
 ### **Run the Application**
@@ -67,7 +68,8 @@ javac -d bin src/*.java
 Execute the application using:
 
 ```bash
-java -cp bin src.Main
+java -cp bin exercise2.Main
+
 ```
 
 ## **📚 Usage Instructions**
