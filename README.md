@@ -1,6 +1,5 @@
-Certainly! Here’s a refined version of your README file with bold and properly sized headings for better readability:
 
----
+
 
 # **📚 Virtual Classroom Management Application**
 
@@ -134,6 +133,4 @@ For any inquiries or feedback, please reach out:
 - **Email**: theerajnjegan@gmail.com
 - **GitHub**: [theerajn](https://github.com/theerajn)
 
----
 
-This should make the headings stand out more clearly and improve the overall readability of your README file!
